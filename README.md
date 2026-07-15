@@ -68,7 +68,10 @@ LEFT JOIN skills_job_dim ON skills_demand.job_id = skills_job_dim.job_id
 LEFT JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 WHERE skills IS NOT NULL
 GROUP BY skills
-ORDER BY demand_count DESC;
+ORDER BY demand_count DESC
+limit 20 ;
+<img width="2381" height="1068" alt="In demand" src="https://github.com/user-attachments/assets/4b93547c-116c-48b2-b005-b61ebde4e597" />
+
 
 This analysis narrows the scope to Data Analyst positions paying above $70,000. Through multiple LEFT JOINs, grouping, and aggregation, it ranks skills by how frequently they appear in job postings. The CASE statement adds a demand category. Results usually show SQL, Excel, Tableau, Power BI, and Python dominating the list.
 
