@@ -21,4 +21,5 @@ WHERE skills is not NULL
 group BY 
     skills
 ORDER BY  
-    count(*) DESC;
+    count(*) DESC
+LIMIT 20;
