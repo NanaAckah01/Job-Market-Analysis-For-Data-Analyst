@@ -4,7 +4,7 @@ WITH job_skills as (select
     job_title,
     salary_year_avg
 from job_postings_fact
-where salary_year_avg is not NULL
+where salary_year_avg is not NULL and job_title_short = 'Data Analyst'
 ORDER BY
     salary_year_avg DESC
 limit 20)
