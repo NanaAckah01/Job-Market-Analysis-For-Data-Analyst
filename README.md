@@ -1,4 +1,4 @@
-# Project-SQL11
+
 SQL Analysis on Jobs
 # Data Analyst Job Market Analysis – SQL Portfolio Project
 
